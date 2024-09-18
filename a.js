@@ -11,7 +11,7 @@ const foodItemsData = [
 
 let cart = [];
 
-// Load food items
+
 const foodItemsContainer = document.getElementById('foodItems');
 
 function loadFoodItems() {
@@ -29,14 +29,14 @@ function loadFoodItems() {
     });
 }
 
-// Add item to cart
+
 function addToCart(itemId) {
     const item = foodItemsData.find(food => food.id === itemId);
     cart.push(item);
     updateCart();
 }
 
-// Update cart
+
 const cartItemsContainer = document.getElementById('cartItems');
 const cartTotalContainer = document.getElementById('cartTotal');
 
@@ -50,7 +50,7 @@ function updateCart() {
     cartTotalContainer.innerHTML = `Total: $${total}`;
 }
 
-// Search functionality
+
 const searchInput = document.getElementById('searchInput');
 
 searchInput.addEventListener('input', function () {
@@ -74,7 +74,6 @@ function displayFilteredItems(items) {
     });
 }
 
-// Filter by category
 const categoryFilter = document.getElementById('categoryFilter');
 categoryFilter.addEventListener('change', function () {
     const category = categoryFilter.value;
@@ -86,7 +85,7 @@ categoryFilter.addEventListener('change', function () {
     }
 });
 
-// Filter by price
+
 const priceFilter = document.getElementById('priceFilter');
 const priceValue = document.getElementById('priceValue');
 
@@ -97,4 +96,3 @@ priceFilter.addEventListener('input', function () {
     displayFilteredItems(filteredItems);
 });
 
-// Load food items on page load
