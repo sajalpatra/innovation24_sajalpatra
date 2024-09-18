@@ -1,0 +1,139 @@
+/* *{
+    margin:0px;
+    padding: opx;
+    box-sizing: border-box;
+    color: aliceblue;
+    
+}
+body{
+    background-image: url(pexels-felixmittermeier-956981.jpg);
+    height: 100vh;
+    width: 100%;
+}
+#head_bar{
+    display:flex;
+    flex-wrap: nowrap;
+    justify-items: flex-end;
+
+}
+.nav_bar{
+    display: flex;
+    border: solid;
+    margin-left:350px;
+    justify-content: space-between;
+    
+} */
+ /* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #ff6b6b;
+    color: white;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.search-bar input {
+    padding: 0.5rem;
+    font-size: 16px;
+    width: 250px;
+}
+
+main {
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+}
+
+.filters {
+    flex: 1;
+    background-color: white;
+    padding: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.filters h2 {
+    font-size: 20px;
+}
+
+.food-list {
+    flex: 2;
+    background-color: white;
+    padding: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.food-items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.food-item {
+    background-color: #fff;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.food-item img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.food-item h3 {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.cart {
+    flex: 1;
+    background-color: white;
+    padding: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.cart h2 {
+    font-size: 20px;
+}
+
+#cartItems {
+    margin-bottom: 15px;
+}
+
+#cartTotal {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #ff6b6b;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #ff6b6b;
+    color: white;
+    margin-top: 20px;
+}

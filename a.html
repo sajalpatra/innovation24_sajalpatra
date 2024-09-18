@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Ordering Platform</title>
+    <link rel="stylesheet" href="a.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Food Hub</h1>
+        </div>
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Search food...">
+        </div>
+    </header>
+
+    <main>
+        <section class="filters">
+            <h2>Filters</h2>
+            <div>
+                <label for="categoryFilter">Category:</label>
+                <select id="categoryFilter">
+                    <option value="all">All</option>
+                    <option value="pizza">Pizza</option>
+                    <option value="burger">Burger</option>
+                    <option value="pasta">Pasta</option>
+                    <option value="dessert">Dessert</option>
+                </select>
+            </div>
+            <div>
+                <label for="priceFilter">Price:</label>
+                <input type="range" id="priceFilter" min="0" max="50" value="50">
+                <span id="priceValue">$50</span>
+            </div>
+        </section>
+
+        <section class="food-list">
+            <h2>Menu</h2>
+            <div class="food-items" id="foodItems">
+                <!-- Food items will be inserted here dynamically -->
+            </div>
+        </section>
+
+        <section class="cart">
+            <h2>Your Cart</h2>
+            <div id="cartItems"></div>
+            <div id="cartTotal">Total: $0</div>
+            <button id="checkoutButton">Checkout</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Food Plaza. All rights reserved.</p>
+    </footer>
+
+    <script src="a.js"></script>
+</body>
+</html>
